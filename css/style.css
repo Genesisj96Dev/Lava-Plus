@@ -1094,6 +1094,125 @@ header .box-location:before {
 * End rs-slider
 *******************************************************************/
 
+/*================================================== */
+.page-content .container,
+.page-content .content {
+  margin-top: 72px;
+}
+
+@media (max-width: 1199px) {
+  .page-content .container,
+  .page-content .content {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-content .container,
+  .page-content .content {
+    margin-top: 50px;
+  }
+}
+
+.page-content .offset-top-35 {
+  position: relative;
+  margin-top: -35px;
+  z-index: 3;
+}
+
+@media (max-width: 700px) {
+  .page-content .offset-top-35 {
+    margin-top: 0;
+  }
+}
+
+.page-content .offset-top0 {
+  margin-top: 0px;
+}
+
+.page-content .offset-top50 {
+  margin-top: 50px;
+}
+
+.page-content .offset-top60 {
+  margin-top: 60px;
+}
+
+.page-content .offset-top90 {
+  margin-top: 90px;
+}
+
+@media (max-width: 1199px) {
+  .page-content .offset-top90 {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-content .offset-top90 {
+    margin-top: 50px;
+  }
+}
+
+.offset-top0 {
+  margin-top: 0px !important;
+}
+
+/* offset
+/*================================================== */
+/* 4.14 localizacio pagina
+================================================== */
+.breadcrumb {
+  border-bottom: 1px solid #dce9ee;
+  background: #fff;
+}
+
+.breadcrumb ul {
+  padding: 0;
+  margin: 0 0 0 24px;
+  list-style: none;
+}
+
+.breadcrumb li {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #b6bdc0;
+  padding: 0 0 0 20px;
+  margin-right: 10px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+
+.breadcrumb li:before {
+  content: '\e928';
+  font-family: 'laundry';
+  font-size: 8px;
+  left: 0;
+  position: absolute;
+  display: inline-block;
+}
+
+.breadcrumb li:first-child:before {
+  display: none;
+}
+
+.breadcrumb li a {
+  color: #b6bdc0;
+}
+
+.breadcrumb li a:hover {
+  color: #33d65b;
+}
+
+.breadcrumb li:first-child {
+  padding: 0;
+}
+
+/* /localizacion pagina
+
+
 /*******************************************************************
 * 5. Footer
 *******************************************************************/
@@ -1335,3 +1454,120 @@ footer .copyright-box {
 * End Footer
 *******************************************************************/
 
+@media only screen and (min-width: 1025px) {
+  .carusel--parallax {
+    background-attachment: fixed;
+  }
+}
+
+.carusel--parallax {
+  overflow: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+}
+
+/* /box-personal
+================================================== */
+/* 4.16 product-total
+================================================== */
+.product-total {
+  padding: 20px 0 78px;
+  overflow: hidden;
+}
+
+.product-total .icon {
+  font-size: 120px;
+  line-height: 120px;
+  text-align: center;
+  color: #33d65b;
+  margin-bottom: 33px;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.product-total .title {
+  font-size: 48px;
+  line-height: 53px;
+  color: #fff;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.product-total .description {
+  font-size: 20px;
+  line-height: 25px;
+  color: #fff;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  margin-top: 9px;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.product-total:hover .icon {
+  color: #fff;
+}
+
+.product-total:hover .description {
+  margin-top: 29px;
+  margin-bottom: -20px;
+}
+
+.product-total:hover .title {
+  color: #33d65b;
+}
+
+/* tab-history
+================================================== */
+/* 4.13 permission-box
+================================================== */
+.permission-box-mobile .slick-dots {
+  bottom: -10px;
+}
+
+.permission-box {
+  position: relative;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.permission-box .icon {
+  font-size: 50px;
+  line-height: 50px;
+  color: #33d65b;
+  position: absolute;
+}
+
+.permission-box .description {
+  padding: 0 0 0 79px;
+}
+
+.permission-box .title {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  line-height: 27px;
+  padding: 10px 0 15px 0;
+  transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  color: #454545;
+}
+
+.permission-box:hover .title {
+  color: #33d65b;
+}
+
+/* /permission-box
