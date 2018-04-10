@@ -1827,112 +1827,128 @@ footer .copyright-box {
   color: #33d65b;
 }
 
-.contact-box-01 {  
-  position: relative;  
-  padding-right: 33px; 
-  text-align: right; 
-  font-weight: 400;  
-}  
- 
-.contact-box-01 .title { 
-  line-height: 24px; 
-  color: #454545;  
-  font-weight: bold; 
-}  
- 
-.contact-box-01:before { 
-  content: "\e908";  
-  font-family: 'laundry';  
-  position: absolute;  
-  display: inline-block; 
-  top: 7px;  
-  right: 0;  
-  font-size: 21px; 
-  line-height: 27px; 
-  color: #33d65b;  
-}  
- 
-@media (max-width: 767px) {  
-  .contact-box-01 {  
-    padding: 0;  
-   text-align: center;  
-  }  
-  .contact-box-01:before { 
-    position: relative;  
-    margin-bottom: 15px; 
-  }  
-}  
- 
-/* /contact-box-01 
--================================================== */  
-/* contact-box-02  
--================================================== */  
-.contact-box-02 {  
-  position: relative;  
-  padding-right: 33px; 
-  margin-top: 29px;  
-  text-align: right; 
-  font-weight: 400;  
-}  
- 
-.contact-box-02 .title { 
-  font-size: 17px; 
-  line-height: 24px; 
-  color: #454545;  
- font-weight: bold; 
-}  
+.social-icon-content {
+  text-align: right;
+  margin-top: 25px;
+}
 
-.contact-box-02:before { 
-  content: "\e906";  
-  font-family: 'laundry';  
-  position: absolute;  
-  display: inline-block; 
-  top: 7px;  
-  right: 0;  
-  font-size: 21px; 
-  line-height: 27px; 
-  color: #33d65b;  
-}  
- 
-@media (max-width: 767px) {  
-  .contact-box-02 {  
-    text-align: center;  
-    padding: 0;  
-    margin-top: 20px;  
-  }  
-  .contact-box-02:before { 
-    position: relative;  
-    margin-bottom: 15px; 
-  }  
-}  
- 
-/* /contact-box-02 
--================================================== */  
-/* contact-box-03  
--================================================== */  
-.contact-box-03 {  
-  margin-top: 29px;  
-  text-align: right; 
-}  
+.social-icon-content li {
+  display: inline-block;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
 
-.contact-box-03 .title { 
-  font-size: 17px; 
-  line-height: 24px; 
-  color: #454545;  
-  font-weight: bold; 
-}  
- 
-.contact-box-03 a {  
-  text-decoration: underline;  
-}  
- 
-.contact-box-03 a:hover {  
-  text-decoration: none; 
-}  
- 
-@media (max-width: 767px) {  
-  .contact-box-03 {  
-    text-align: center;  
-    padding: 0;  
-    margin-top: 20px;  
-  }  
+.social-icon-content li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #f5f5f5;
+  text-align: center;
+  color: #404040;
+  font-size: 18px;
+  line-height: 50px;
+  transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.social-icon-content li a:hover {
+  background: #404040;
+  color: #fff;
+}
+
+.social-icon-content li:first-child {
+  margin-left: 0;
+}
+
+/* /social-icon-content
+================================================== */
+/* 4.18 contact-box
+================================================== */
+/* contact-box-01
+================================================== */
+.contact-box-01 {
+  display: inline-block;
+  position: relative;
+  padding-right: 33px;
+  text-align: right;
+  font-weight: 400;
+}
+
+.contact-box-01 .title {
+  line-height: 24px;
+  color: #454545;
+  font-weight: bold;
+}
+
+.contact-box-01:before {
+  content: "\e908";
+  font-family: 'laundry';
+  position: absolute;
+  display: inline-block;
+  top: 7px;
+  right: 0;
+  font-size: 21px;
+  line-height: 27px;
+  color: #33d65b;
+}
+
+@media (max-width: 767px) {
+  .contact-box-01 {
+    padding: 0;
+    text-align: center;
+  }
+  .contact-box-01:before {
+    position: relative;
+    margin-bottom: 15px;
+  }
+}
+
+/* /contact-box-01
+================================================== */
+/* contact-box-02
+================================================== */
+.contact-box-02 {
+  display: inline-block;
+  position: relative;
+  padding-right: 33px;
+  text-align: right;
+  font-weight: 400;
+}
+
+.contact-box-02 .title {
+  line-height: 24px;
+  color: #454545;
+  font-weight: bold;
+}
+
+.contact-box-02:before {
+  content: "\e908";
+  font-family: 'laundry';
+  position: absolute;
+  display: inline-block;
+  top: 7px;
+  right: 0;
+  font-size: 21px;
+  line-height: 27px;
+  color: #33d65b;
+}
+
+@media (max-width: 767px) {
+  .contact-box-02 {
+    padding: 0;
+    text-align: center;
+  }
+  .contact-box-02:before {
+    position: relative;
+    margin-bottom: 15px;
+  }
+}
+
+/* /contact-box-02
+================================================== */
