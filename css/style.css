@@ -1292,7 +1292,7 @@ header .box-location:before {
 }
 
 .copyright-box {
-  padding-bottom: 28px;
+  padding-bottom: 30px;
   font-weight: 400;
   line-height: 24px;
 }
@@ -1325,13 +1325,34 @@ footer .box-location:before {
 .time-table {
   position: relative;
   font-weight: 400;
-  padding: 6px 0 90px 35px;
+  padding: 6px 0 30px 35px;
   font-size: 18px;
   line-height: 26px;
 }
 
 .time-table:before {
   content: "\e907";
+  font-family: 'laundry';
+  position: absolute;
+  display: inline-block;
+  top: 7px;
+  left: 0;
+  color: red;
+  font-size: 21px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.email-table {
+  position: relative;
+  font-weight: 400;
+  padding: 6px 0 30px 35px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.email-table:before {
+  content: "\e935";
   font-family: 'laundry';
   position: absolute;
   display: inline-block;
@@ -1410,6 +1431,11 @@ footer .container:last-child {
     margin: 0 auto;
     text-align: left;
   }
+  footer .email-table {
+    width: 250px;
+    margin: 0 auto;
+    text-align: left;
+  }
   footer .footer-separator {
     margin-top: 10px;
   }
@@ -1441,10 +1467,12 @@ footer .container:last-child {
 
 footer .copyright-box {
   padding-bottom: 30px;
+  padding-top: 60px;
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
   footer .copyright-box {
+    padding-top: 60px;
     font-size: 13px;
     line-height: 18px;
   }
@@ -1952,3 +1980,203 @@ footer .copyright-box {
 
 /* /contact-box-02
 ================================================== */
+
+div[class^="bubble-"] {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  background: url(../img/buble.png) no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.bubble-1 {
+  bottom: -195px;
+  left: 9%;
+  animation: bubble-movement 4s infinite ease-in -4.3s;
+}
+
+.bubble-2 {
+  bottom: -140px;
+  left: 17%;
+  animation: bubble-movement 4s infinite ease-in -1.49s;
+}
+
+.bubble-3 {
+  bottom: -66px;
+  left: 79%;
+  animation: bubble-movement 4s infinite ease-in -6.49s;
+}
+
+.bubble-4 {
+  bottom: -79px;
+  left: 36%;
+  animation: bubble-movement 4s infinite ease-in -4.97s;
+}
+
+.bubble-5 {
+  bottom: -1px;
+  left: 100%;
+  animation: bubble-movement 4s infinite ease-in -1.38s;
+}
+
+.bubble-6 {
+  bottom: -70px;
+  left: 56%;
+  animation: bubble-movement 4s infinite ease-in -0.46s;
+}
+
+.bubble-7 {
+  bottom: -140px;
+  left: 88%;
+  animation: bubble-movement 4s infinite ease-in -6.36s;
+}
+
+.bubble-8 {
+  bottom: -14px;
+  left: 97%;
+  animation: bubble-movement 4s infinite ease-in -0.56s;
+}
+
+.bubble-9 {
+  bottom: -2px;
+  left: 15%;
+  animation: bubble-movement 4s infinite ease-in -5.81s;
+}
+
+.bubble-10 {
+  bottom: -139px;
+  left: 100%;
+  animation: bubble-movement 4s infinite ease-in -4.5s;
+}
+
+.bubble-11 {
+  bottom: -8px;
+  left: 30%;
+  animation: bubble-movement 3s infinite ease-in -5.37s;
+}
+
+.bubble-12 {
+  bottom: -124px;
+  left: 67%;
+  animation: bubble-movement 3s infinite ease-in -5.33s;
+}
+
+.bubble-13 {
+  bottom: -31px;
+  left: 84%;
+  animation: bubble-movement 3s infinite ease-in -0.9s;
+}
+
+.bubble-14 {
+  bottom: -47px;
+  left: 6%;
+  animation: bubble-movement 3s infinite ease-in -3.21s;
+}
+
+.bubble-15 {
+  bottom: -174px;
+  left: 69%;
+  animation: bubble-movement 3s infinite ease-in -2.1s;
+}
+
+.bubble-16 {
+  bottom: -111px;
+  left: 11%;
+  animation: bubble-movement 3s infinite ease-in -1.29s;
+}
+
+.bubble-17 {
+  bottom: -98px;
+  left: 53%;
+  animation: bubble-movement 3s infinite ease-in -4.72s;
+}
+
+.bubble-18 {
+  bottom: -163px;
+  left: 83%;
+  animation: bubble-movement 3s infinite ease-in -5.72s;
+}
+
+.bubble-19 {
+  bottom: -181px;
+  left: 7%;
+  animation: bubble-movement 3s infinite ease-in -2.56s;
+}
+
+.bubble-20 {
+  bottom: -177px;
+  left: 3%;
+  animation: bubble-movement 3s infinite ease-in -5.6s;
+}
+
+.bubbleContainer {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@-webkit-keyframes bubble-movement {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+    height: 1px;
+    width: 1px;
+  }
+  100% {
+    transform: translate3d(-50%, -280px, 0);
+    height: 75px;
+    width: 75px;
+  }
+}
+
+@-moz-keyframes bubble-movement {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+    height: 1px;
+    width: 1px;
+  }
+  100% {
+    transform: translate3d(-50%, -280px, 0);
+    height: 75px;
+    width: 75px;
+  }
+}
+
+@-o-keyframes bubble-movement {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+    height: 1px;
+    width: 1px;
+  }
+  100% {
+    transform: translate3d(-50%, -280px, 0);
+    height: 75px;
+    width: 75px;
+  }
+}
+
+@keyframes bubble-movement {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+    height: 1px;
+    width: 1px;
+  }
+  100% {
+    transform: translate3d(-50%, -280px, 0);
+    height: 75px;
+    width: 75px;
+  }
+}
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
