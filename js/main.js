@@ -260,7 +260,7 @@ $document.ready(function () {
 			if (windowWidth > 991 && plugins.menu.is(':hidden')) {
 				plugins.menu.removeAttr('style');
 			}
-			onScrollInit(plugins.animation, windowWidth);
+			//onScrollInit(plugins.animation, windowWidth);
 		}, 500);
 	});
 
